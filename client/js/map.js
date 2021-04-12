@@ -50,7 +50,7 @@ function Map (mapOptions) {
     var layers = Array.prototype.concat([layer], mapOptions.layers)
 
     // Prevent map from zooming in too far
-    const resolutions = source.tileGrid.getResolutions().slice(0, 11)
+    const resolutions = source.tileGrid.getResolutions().slice(0, 12)
 
     map = new ol.Map({
       interactions: mapOptions.interactions || ol.interaction.defaults({
